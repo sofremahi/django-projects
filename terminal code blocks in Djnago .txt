@@ -1,0 +1,6 @@
+terminal code blocks in Djnago 
+open terminal CTRL + ` 
+powershell
+ 
+py manage.py startapp app_name                        vreating an app(startapp)
+py manage.py runserver                                running the app(server)
