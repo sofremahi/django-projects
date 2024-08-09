@@ -1,0 +1,11 @@
+started pack for Django VS code
+mkdir directory_name                                            creating directory
+cd directory_name/                                              entering directory
+clear                                                           clear terminal
+ls                                                              info of directory
+py -m venv venv                                                 creating virtual environment
+py -m pip install --upgrade pip                                 install/upgrade pip
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass      bypass the execution policy
+venv\scripts\activate                                           activate the venv
+pip install Django                                              installing Django
+django-admin startproject project_name .                        creating project in the same directory      
