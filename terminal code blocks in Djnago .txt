@@ -4,3 +4,5 @@ powershell
  
 py manage.py startapp app_name                        vreating an app(startapp)
 py manage.py runserver                                running the app(server)
+py manage.py shell                                    entering shell 
+py manage.py createsuperuser                          creating user adming to access django console
