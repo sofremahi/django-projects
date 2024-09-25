@@ -1,0 +1,19 @@
+{% extends "flights/layout.html"%} {%block body%}
+<h1>Flight {{flight.id}}</h1>
+<ul>
+  <li>
+    origin : {{flight.origin}} to destination : {{flight.destination}} estimated
+    time : {{flight.duration}} minutes
+  </li>
+</ul>
+<h2>Companies presenting the flight</h2>
+<ul>
+  {% for company in companies%}
+  <li>{{company.name}} ({{company.code}})</li>
+  {%empty%}
+  <li>no company providing the flight</li>
+  {%endfor%}
+</ul>
+<a href="{% url 'flights'%}">
+  back to the flight list <a> {% endblock %} </a></a
+>
