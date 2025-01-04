@@ -2,8 +2,9 @@
 <h1>Flight {{flight.id}}</h1>
 <ul>
   <li>
+    {% load custom_filters %}
     origin : {{flight.origin}} to destination : {{flight.destination}} estimated
-    time : {{flight.duration}} minutes
+    time : {{flight.duration |to_hours }} hours
   </li>
 </ul>
 <h2>Companies presenting the flight</h2>
@@ -15,5 +16,4 @@
   {%endfor%}
 </ul>
 <a href="{% url 'flights'%}">
-  back to the flight list <a> {% endblock %} </a></a
->
+  back to the flight list {% endblock %} 
